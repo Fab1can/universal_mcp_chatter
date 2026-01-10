@@ -5,8 +5,16 @@ A lightweight Python workspace to experiment with multiple model providers (Open
 ## Setup
 
 - Ensure Python 3.10+ is available.
-- (Optional) Create a virtual environment.
-- Install development/test dependencies:
+- (Optional) create and activate a virtual environment.
+- Install runtime dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Development and Tests
+
+To install test-only dependencies (pytest, plugins):
 
 ```bash
 pip install -r requirements-test.txt

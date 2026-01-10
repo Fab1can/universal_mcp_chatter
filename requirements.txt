@@ -1,0 +1,6 @@
+# Runtime dependencies for Universal MCP Chatter
+fastmcp
+tiktoken
+openai>=1.0
+anthropic
+google-genai
