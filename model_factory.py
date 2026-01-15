@@ -31,6 +31,11 @@ class ModelFactory:
         self.url = url
         self.api_key = None
     
+    def set_openai_api_key_and_url(self, api_key: str, url: str):
+        self.format = "openai"
+        self.api_key = api_key
+        self.url = url
+    
     def set_gemini_api_key(self, api_key: str):
         self.format = "gemini"
         self.api_key = api_key
@@ -100,7 +105,7 @@ class ModelFactory:
             self.set_summarizer_language("italian")
         if self.format == "openai":
             if self.api_key is None and self.url is None:
-                raise ValueError("You must call set_openai_api_key or set_openai_url before building the model")
+                raise ValueError("You must call set_openai_api_key, set_openai_url or set_openai_api_key_and_url before building the model")
             return OpenAIModel(
                 format=self.format,
                 max_tokens=self.max_tokens,
