@@ -93,11 +93,9 @@ class ModelFactory:
 
         # Ensure summarizer is always configured
         if self.summarizer_max_tokens is None:
-            # Default to half of max_tokens, minimum 64
-            self.summarizer_max_tokens = max(64, self.max_tokens // 2)
+            raise ValueError("You must call set_summarizer_max_tokens before building the model")
         if self.summarizer_system_prompt is None or self.summarizer_user_prompt is None:
-            # Default language for summarizer prompts
-            self.set_summarizer_language("italian")
+            raise ValueError("You must call set_summarizer_language before building the model")
         if self.format == "openai":
             if self.api_key is None and self.url is None:
                 raise ValueError("You must call set_openai_api_key or set_openai_url before building the model")
