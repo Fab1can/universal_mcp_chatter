@@ -1,0 +1,1 @@
+Ogni volta che fai delle modifche aggiorna i relativi file nella cartella docs, inoltre prima di fare una modifica, controlla se c'è già un file di istruzioni che riguarda quell'argomento, così che tu possa essere più efficente e preciso.
