@@ -1,0 +1,1 @@
+Ogni volta che impari qualcosa di utile su questo progetto, scrivilo in fondo a questo file. Possono essere informazioni sulla struttura del codice, consigli o indicazioni date dallo sviluppatore, oppure come risolvere un problema specifico. L'obiettivo è creare una guida pratica che aiuti te e gli altri a capire meglio il progetto e a lavorare in modo piu efficiente.
